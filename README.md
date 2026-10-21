@@ -1,91 +1,86 @@
-# \Shark3 🦈
+<div align="center">
+  <img src="assets/icon.png" alt="Shark3 Logo" width="120" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
+  
+  <h1>Shark3</h1>
+  <p><strong>A experiência definitiva e minimalista para criadores e editores.</strong></p>
+  
+  <p>
+    <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
+    <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=white" alt="macOS" />
+    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
+  </p>
+  
+  <p>
+    <i>Feito com orgulho no Brasil 🇧🇷</i>
+  </p>
+</div>
 
-Programa para **Windows 10/11** que converte vídeos, playlists e Mix do YouTube em arquivos de áudio
-**em todas as qualidades**: MP3, M4A (AAC), Opus, OGG, FLAC, WAV ou o áudio original sem reconverter.
-Interface escura (PySide6), fila com downloads simultâneos, tags e capa embutidas e equalizador
-paramétrico de 6 bandas. *(Shark3 é um nome provisório: troque em `app/paths.py`, `build.spec` e `installer.iss`.)*
+<hr />
 
-Baseado na especificação do projeto (PySide6 + yt-dlp + FFmpeg + SQLite).
+## ✨ Sobre o Projeto
 
-## Como usar (código-fonte)
+O **Shark3** nasceu de uma necessidade real: ferramentas poderosas não precisam ser complicadas. Desenvolvido para profissionais de mídia, produtores musicais e criadores de conteúdo, nosso foco é entregar uma interface premium, livre de distrações e com performance de ponta.
 
-1. Instale o **Python 3.10+** (marque *Add to PATH*).
-2. Dê dois cliques em **`setup.bat`**: cria o ambiente, instala as dependências e baixa o **Deno**.
-3. Dê dois cliques em **`run.bat`**.
+Nós não acreditamos em softwares inchados. Acreditamos em uma experiência fluida, onde a tecnologia trabalha silenciosamente para você criar o que importa.
 
-Cole um link (vídeo, playlist, Mix ou canal), escolha formato/qualidade na barra superior e clique em **Baixar**.
-Também dá para arrastar links para a janela.
+## 🚀 Principais Recursos
 
-## Formatos e qualidades
+*   **Interface Minimalista:** Um design escuro, elegante e focado no que realmente importa, projetado para reduzir a fadiga visual durante longas sessões de trabalho.
+*   **Equalizador Avançado (EQ):** Controle total sobre o seu áudio. Ajustes precisos, visuais dinâmicos e respostas em tempo real para garantir a melhor qualidade sonora.
+*   **Performance Nativa:** Construído com as melhores tecnologias para ser rápido, leve e não engasgar, mesmo em máquinas mais modestas.
+*   **Privacidade em Primeiro Lugar:** Sem anúncios, sem rastreamento (telemetry) e sem coleta de dados. O seu trabalho e seus dados são 100% seus.
+*   **Workflow Otimizado:** Atalhos inteligentes e uma disposição de tela que faz sentido para quem precisa de agilidade.
 
-| Formato | Qualidades |
-|---|---|
-| MP3 | 64–320 kbps (CBR) ou VBR V0/V2/V4 |
-| M4A (AAC) | 64–320 kbps |
-| Opus | 48–256 kbps |
-| OGG (Vorbis) | 64–320 kbps |
-| FLAC / WAV | sem perdas / PCM 16 bits |
-| Original | copia o áudio do YouTube sem reconverter (m4a ou opus) |
+---
 
-> **Importante:** o YouTube entrega áudio de ~128 kbps (AAC) ou até ~160 kbps (Opus). Converter para 320 kbps
-> ou FLAC não melhora a qualidade além da fonte: só aumenta o arquivo. Para o melhor custo-benefício use
-> *Original* ou Opus/MP3 em 160–192 kbps.
+## 📸 Interface
 
-## Recursos
+Dê uma olhada na experiência que preparamos para você.
 
-- Vídeo único, playlist (com janela para escolher faixas), **Mix** (com “♪ Carregar mais…” de 25 a 300 faixas) e canais.
-- Fila com 1–8 downloads simultâneos, cancelar, repetir falhas, remover, filtrar; a lista é salva entre execuções.
-- Tags (título, artista sem “- Topic”, álbum = playlist, nº da faixa) e capa (opcionalmente recortada em quadrado).
-- Subpastas por playlist ou canal, numeração `07 - Título`, nomes seguros para o Windows.
-- Arquivo já existe: perguntar / pular / substituir / renomear (com “aplicar a todos”).
-- Deduplicação por ID do vídeo e por título + duração (±3 s), em memória e no banco SQLite.
-- Normalização de volume (EBU R128) e equalizador (Bell, shelves, passa-altas/baixas) com limitador anti-clipping.
-- Cookies do navegador ou `cookies.txt` para quando o YouTube pedir login.
+<div align="center">
+  <!-- SUBSTITUA OS LINKS ABAIXO PELOS LINKS DAS SUAS IMAGENS -->
+  <a href="LINK_DA_SUA_IMAGEM_DO_LAYOUT_PRINCIPAL">
+    <img src="LINK_DA_SUA_IMAGEM_DO_LAYOUT_PRINCIPAL" alt="Layout Principal do Shark3" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="LINK_DA_SUA_IMAGEM_DO_EQ">
+    <img src="LINK_DA_SUA_IMAGEM_DO_EQ" alt="Equalizador do Shark3" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
+  </a>
+  <br>
+  <sub>Layout Principal &nbsp;•&nbsp; Equalizador Avançado</sub>
+</div>
 
-## Requisitos que o YouTube impõe hoje
+---
 
-- **Deno** (ou Node ≥ 22): o yt-dlp precisa de um runtime JavaScript para o YouTube. O `setup.bat`/`build.bat`
-  baixam o Deno para `bin\deno.exe`; o instalador já o inclui. Em Configurações > Avançado dá para ver o que foi detectado.
-- **yt-dlp atualizado**: se os downloads pararem de funcionar, atualize: `.venv\Scripts\pip install -U "yt-dlp[default]"`
-  (versão em código-fonte) ou refaça o build/instalador (versão empacotada não se atualiza sozinha).
+## 📥 Download
 
-## Gerar o executável e o instalador
+A versão mais recente está sempre disponível na aba de **Releases**. 
 
-Execute **`build.bat`**: instala as dependências de build, baixa o Deno, roda o PyInstaller (modo *onedir*) e,
-se o [Inno Setup 6](https://jrsoftware.org/isinfo.php) estiver instalado, gera `installer\SharkTune_Setup_1.0.0.exe`.
+| Sistema Operacional | Arquitetura | Download |
+| :--- | :--- | :--- |
+| **Windows** | 64-bit (Intel/AMD) | [Baixar Instalador (.exe)](#) |
 
-## Testes
+*(Nota: Por ser um projeto independente, o Windows pode exibir um aviso de segurança na primeira execução. Basta clicar em "Mais Informações" -> "Executar Assim Mesmo" ou "Abrir Mesmo").*
 
-`python tests/smoke_test.py` roda um teste **offline** do pipeline (gera áudio, serve por HTTP local e converte
-em todos os formatos conferindo bitrate, tags, capa, EQ, conflitos e organização). Não acessa o YouTube.
+---
 
-## Estrutura
+## 🛠️ Construído com
 
-```
-main.py                 ponto de entrada (instância única, logs, tema)
-app/paths.py            caminhos/constantes (código-fonte e EXE)
-app/config.py           configurações em ~/.ytmusic_downloader/config.json
-app/database.py         SQLite (WAL, chaves estrangeiras, cascata)
-app/audio.py            formatos, qualidades, EQ/DSP, detecção de ffmpeg e Deno
-app/workers.py          ExtractTask / DownloadTask (QRunnable) e conversão
-app/main_window.py      janela principal, fila, dedupe, conflitos
-app/dialogs.py          seleção de faixas e configurações
-app/eq_widget.py        equalizador desenhado com QPainter
-app/delegates.py, theme.py, thumbs.py, logsetup.py
-```
+*   [Python ] *
+*   [PyInstaller](https://pyinstaller.org/) para empacotamento
+*   [Inno Setup](https://jrsoftware.org/isinfo.php) para o instalador do Windows
 
-## Problemas comuns
+---
 
-| Sintoma | O que fazer |
-|---|---|
-| “Confirme que você não é um robô” | Configurações > Avançado: escolha o navegador logado (Firefox costuma ser o mais confiável) ou um `cookies.txt`. |
-| “Runtime JavaScript não encontrado” | Rode `setup.bat` (baixa o Deno) ou `winget install DenoLand.Deno`. |
-| “Formato não disponível” / falhas gerais | Atualize o yt-dlp (veja acima). |
-| Arquivo em uso | Feche o player que está tocando o arquivo a ser substituído. |
+## ⚖️ Licença e Legal
 
-Logs e dados: `%USERPROFILE%\.ytmusic_downloader\` (botão em Configurações > Avançado).
+Este é um projeto **Source-Available** (Código Aberto). Sinta-se livre para estudar, modificar e usar para fins pessoais ou acadêmicos. 
 
-## Aviso
+A venda ou o empacotamento do Shark3 em produtos comerciais de terceiros não é permitida. O nome e a logo "Shark3" são marcas do autor.
 
-Baixe apenas conteúdo que você tem direito de baixar (seu, licenciado, domínio público ou onde os termos permitirem).
-O uso é de sua responsabilidade.
+---
+
+<div align="center">
+  <p>Design com propósito. Desenvolvido no Brasil 🇧🇷 para o mundo.</p>
+  <p>Se este projeto te ajudou, considere deixar uma ⭐!</p>
+</div>
