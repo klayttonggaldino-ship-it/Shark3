@@ -2,85 +2,75 @@
   <img src="assets/icon.png" alt="Shark3 Logo" width="120" style="border-radius: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
   
   <h1>Shark3</h1>
-  <p><strong>A experiência definitiva e minimalista para criadores e editores.</strong></p>
+  <p><strong>Stop overcomplicating things. The ultimate player for Windows.</strong></p>
   
   <p>
     <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows" />
-    <img src="https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=macos&logoColor=white" alt="macOS" />
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-  </p>
-  
-  <p>
-    <i>Feito com orgulho no Brasil 🇧🇷</i>
+    <img src="https://img.shields.io/badge/Made_in_Brazil-009C3B?style=for-the-badge&logo=brazil&logoColor=white" alt="Brazil" />
   </p>
 </div>
 
 <hr />
 
-## ✨ Sobre o Projeto
+## ✨ The Shark3 Vibe
 
-O **Shark3** nasceu de uma necessidade real: ferramentas poderosas não precisam ser complicadas. Desenvolvido para profissionais de mídia, produtores musicais e criadores de conteúdo, nosso foco é entregar uma interface premium, livre de distrações e com performance de ponta.
+You know that app you download, open, and it just **works**? No endless menus, no ads, no dragging your PC down? That's Shark3.
 
-Nós não acreditamos em softwares inchados. Acreditamos em uma experiência fluida, onde a tecnologia trabalha silenciosamente para você criar o que importa.
+We got tired of bloated, soulless tools. We built Shark3 for people who actually use their computers to work and create: you. A beautiful, dark, straight-to-the-point interface with the performance your Windows deserves. It's simple, it's fast, and it's proudly Brazilian.
 
-## 🚀 Principais Recursos
+## 🚀 What it actually does (The real features)
 
-*   **Interface Minimalista:** Um design escuro, elegante e focado no que realmente importa, projetado para reduzir a fadiga visual durante longas sessões de trabalho.
-*   **Equalizador Avançado (EQ):** Controle total sobre o seu áudio. Ajustes precisos, visuais dinâmicos e respostas em tempo real para garantir a melhor qualidade sonora.
-*   **Performance Nativa:** Construído com as melhores tecnologias para ser rápido, leve e não engasgar, mesmo em máquinas mais modestas.
-*   **Privacidade em Primeiro Lugar:** Sem anúncios, sem rastreamento (telemetry) e sem coleta de dados. O seu trabalho e seus dados são 100% seus.
-*   **Workflow Otimizado:** Atalhos inteligentes e uma disposição de tela que faz sentido para quem precisa de agilidade.
+*   🎚️ **A Real Equalizer (EQ):** Forget basic EQs. You get total control here. Tweak the lows, highs, and mids, and watch the real-time visual feedback. Shape your sound however you want—whether you're editing a video or just vibing to a track.
+*   🌑 **Minimalist Design (Always Dark Mode):** A clean, modern, no-nonsense interface. Your eyes will thank you after an 8-hour shift in front of the screen.
+*   ⚡ **Lightweight & Fast:** Shark3 won't fry your machine. It's optimized to open instantly and won't eat up the resources you need for other tasks.
+*   🛡️ **Total Privacy:** Zero telemetry, zero tracking. Nobody here is watching what you do. What's yours stays on your PC.
+*   🪟 **Built for Windows:** No half-measures. Shark3 was engineered and polished exclusively for the Windows ecosystem, ensuring rock-solid stability and seamless integration.
 
 ---
 
-## 📸 Interface
-
-Dê uma olhada na experiência que preparamos para você.
+## 📸 Take a look at the visuals
 
 <div align="center">
-  <!-- SUBSTITUA OS LINKS ABAIXO PELOS LINKS DAS SUAS IMAGENS -->
-  <a href="LINK_DA_SUA_IMAGEM_DO_LAYOUT_PRINCIPAL">
-    <img src="LINK_DA_SUA_IMAGEM_DO_LAYOUT_PRINCIPAL" alt="Layout Principal do Shark3" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
+  <a href="assets/layout.png">
+    <img src="assets/layout.png" alt="Shark3 Main Layout" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
   </a>
   &nbsp;&nbsp;
-  <a href="LINK_DA_SUA_IMAGEM_DO_EQ">
-    <img src="LINK_DA_SUA_IMAGEM_DO_EQ" alt="Equalizador do Shark3" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
+  <a href="assets/EQ.png">
+    <img src="assets/EQ.png" alt="Shark3 Advanced EQ" width="48%" style="border-radius: 8px; border: 1px solid #333;" />
   </a>
   <br>
-  <sub>Layout Principal &nbsp;•&nbsp; Equalizador Avançado</sub>
+  <sub>Main Layout &nbsp;•&nbsp; Advanced Equalizer</sub>
 </div>
 
 ---
 
 ## 📥 Download
 
-A versão mais recente está sempre disponível na aba de **Releases**. 
+The latest version is always available in the **Releases** tab.
 
-| Sistema Operacional | Arquitetura | Download |
+| Operating System | Architecture | Download |
 | :--- | :--- | :--- |
-| **Windows** | 64-bit (Intel/AMD) | [Baixar Instalador (.exe)](#) |
+| **Windows** | 64-bit (Intel/AMD) | [Download Installer (.exe)](https://github.com/klayttonggaldino-ship-it/Shark3/releases) |
 
-*(Nota: Por ser um projeto independente, o Windows pode exibir um aviso de segurança na primeira execução. Basta clicar em "Mais Informações" -> "Executar Assim Mesmo" ou "Abrir Mesmo").*
-
----
-
-## 🛠️ Construído com
-
-*   [Python ] *
-*   [PyInstaller](https://pyinstaller.org/) para empacotamento
-*   [Inno Setup](https://jrsoftware.org/isinfo.php) para o instalador do Windows
+*(Note: Since we are an independent project, Windows might show a "SmartScreen" warning on the first run. Just click "More info" -> "Run anyway").*
 
 ---
 
-## ⚖️ Licença e Legal
+## 🛠️ Under the hood
 
-Este é um projeto **Source-Available** (Código Aberto). Sinta-se livre para estudar, modificar e usar para fins pessoais ou acadêmicos. 
+*   **Language:** Python
+*   **Packaging:** PyInstaller
+*   **Installer:** Inno Setup
 
-A venda ou o empacotamento do Shark3 em produtos comerciais de terceiros não é permitida. O nome e a logo "Shark3" são marcas do autor.
+---
+
+## ⚖️ License
+
+This is a **Source-Available** project. Feel free to study, modify, and use it for personal and academic purposes. Selling, monetizing, or using the Shark3 brand/logo without permission is not allowed.
 
 ---
 
 <div align="center">
-  <p>Design com propósito. Desenvolvido no Brasil 🇧🇷 para o mundo.</p>
-  <p>Se este projeto te ajudou, considere deixar uma ⭐!</p>
+  <p>Designed with purpose. Proudly built in Brazil 🇧🇷 for the world.</p>
+  <p>If Shark3 helped you out, drop a ⭐ to show some love!</p>
 </div>
